@@ -36,6 +36,8 @@ public class InfoActivity extends AppCompatActivity {
 
         if(mapIntent.resolveActivity(getPackageManager())!= null) {
             startActivity(mapIntent);
+        }else{
+            Toast.makeText(this,"Attempt failed",Toast.LENGTH_LONG).show();
         }
 
 
